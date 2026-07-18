@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veil — Ephemeral. Encrypted. Untraced.</title>
+  <meta name="description" content="Veil is a session-based, P2P terminal messaging application built on Tor onion services. No servers. No logs. No persistence. Completely anonymous." />
+  <meta name="keywords" content="veil, p2p, messaging, tor, privacy, encrypted, anonymous, terminal, onion service" />
+  <meta name="author" content="GNU-LuxTech" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Veil — Ephemeral. Encrypted. Untraced." />
+  <meta property="og:description" content="Session-based P2P messaging over Tor. No servers. No logs. No persistence." />
+  <meta property="og:image" content="https://gnu-luxtech.github.io/Veil-App/veil_logo.png" />
+  <meta property="og:url" content="https://gnu-luxtech.github.io/Veil-App/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Veil — Ephemeral. Encrypted. Untraced." />
+  <meta name="twitter:description" content="Session-based P2P messaging over Tor. No servers. No logs. No persistence." />
+
+  <link rel="icon" type="image/png" href="veil_logo.png" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Veil home">
+        <img src="veil_logo.png" alt="Veil logo" />
+        VEIL
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="navigation" aria-label="Main navigation">
+        <li><a href="#principles">Principles</a></li>
+        <li><a href="#how">How it Works</a></li>
+        <li><a href="#stack">Tech Stack</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="https://github.com/GNU-LuxTech/Veil-App" target="_blank" rel="noopener" class="nav-cta" id="nav-github-cta">View on GitHub</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- =============================================
+       HERO
+       ============================================= -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-glow-1"></div>
+      <div class="hero-glow-2"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+
+        <!-- Left text -->
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Phase 2 Complete — Active Development
+          </div>
+
+          <h1 class="hero-title">
+            <span class="gradient-text">Veil</span>
+          </h1>
+
+          <p class="hero-tagline">
+            <span>Ephemeral.</span> &nbsp;<span>Encrypted.</span> &nbsp;<span>Untraced.</span>
+          </p>
+
+          <p class="hero-desc">
+            A session-based, P2P terminal messaging application built on Tor onion services.
+            No servers. No logs. No persistence. If you're not there to receive it — it doesn't exist.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-primary" id="hero-download-btn">
+              <!-- Download icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+              Download Veil
+            </a>
+            <a href="https://github.com/GNU-LuxTech/Veil-App" target="_blank" rel="noopener" class="btn btn-secondary" id="hero-github-btn">
+              <!-- GitHub icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" /></svg>
+              View Source
+            </a>
+          </div>
+        </div>
+
+        <!-- Right visual -->
+        <div class="hero-visual">
+          <div class="hero-logo-wrap">
+            <img src="veil_logo.png" alt="Veil — ephemeral fabric logo" class="hero-logo" />
+          </div>
+
+          <!-- Mini terminal -->
+          <div class="mini-terminal" aria-label="Terminal demo">
+            <div class="terminal-bar">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title">veil — session</span>
+            </div>
+            <div class="terminal-body" id="hero-terminal">
+              <div><span class="t-dim">$ </span><span class="t-green">veil --listen</span></div>
+              <div><span class="t-dim">[VEIL] </span><span class="t-accent">starting tor daemon...</span></div>
+              <div><span class="t-dim">[VEIL] </span><span class="t-accent">creating onion service...</span></div>
+              <div><span class="t-dim">[VEIL] </span><span class="t-white">your address: </span><span class="t-purple">veilzf8n1abc4xyz<wbr>...onion</span></div>
+              <div><span class="t-dim">[VEIL] </span><span class="t-green">listening for connections</span></div>
+              <div>&nbsp;</div>
+              <div id="type-line"><span class="t-dim">[VEIL] </span><span class="t-accent" id="typed-text"></span><span class="cursor-blink"></span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       CORE PRINCIPLES
+       ============================================= -->
+  <section id="principles">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// core_principles</p>
+        <h2 class="section-title">Built on non-negotiable privacy</h2>
+        <p class="section-desc">Every architectural decision in Veil flows from five immutable principles.</p>
+      </div>
+
+      <div class="principles-grid">
+        <div class="principle-card reveal">
+          <div class="principle-icon">🔒</div>
+          <div class="principle-name">Zero Persistence</div>
+          <p class="principle-desc">Messages exist only in RAM. No logs, no database, no disk writes. The moment a session ends, the exchange is gone.</p>
+        </div>
+        <div class="principle-card reveal reveal-delay-1">
+          <div class="principle-icon">👤</div>
+          <div class="principle-name">Zero Identity</div>
+          <p class="principle-desc">No phone number, no email, no username registry. Your Ed25519 keypair is your identity — nothing more.</p>
+        </div>
+        <div class="principle-card reveal reveal-delay-2">
+          <div class="principle-icon">🌐</div>
+          <div class="principle-name">Zero Servers</div>
+          <p class="principle-desc">No central infrastructure at all. Tor handles all routing. There is nothing to seize, no data to subpoena.</p>
+        </div>
+        <div class="principle-card reveal reveal-delay-3">
+          <div class="principle-icon">🛡️</div>
+          <div class="principle-name">Zero Trust</div>
+          <p class="principle-desc">Every incoming connection requires explicit human acceptance. Nothing is automatic, nothing is assumed.</p>
+        </div>
+        <div class="principle-card reveal reveal-delay-4">
+          <div class="principle-icon">⚡</div>
+          <div class="principle-name">Synchronous Only</div>
+          <p class="principle-desc">Both parties must be online simultaneously. No offline delivery by design — this is a feature, not a limitation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       HOW IT WORKS
+       ============================================= -->
+  <section id="how">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// how_it_works</p>
+        <h2 class="section-title">Simple flow, zero exposure</h2>
+        <p class="section-desc">Veil handles all the cryptographic complexity. You just connect and talk.</p>
+      </div>
+
+      <div class="how-grid">
+        <div class="how-steps">
+          <div class="how-step active" data-step="0" id="step-0">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <div class="step-title">Generate your identity</div>
+              <p class="step-desc">On first launch, Veil generates an Ed25519 keypair. Your Tor v3 onion address is derived directly from your public key — permanent, self-authenticating, unfakeable.</p>
+            </div>
+          </div>
+          <div class="how-step" data-step="1" id="step-1">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <div class="step-title">Share your address out-of-band</div>
+              <p class="step-desc">There is no discovery server. Share your 56-character onion address over Signal, on paper, or spoken aloud. Veil does not broadcast your presence.</p>
+            </div>
+          </div>
+          <div class="how-step" data-step="2" id="step-2">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <div class="step-title">Accept or reject incoming connections</div>
+              <p class="step-desc">When a peer connects, Veil prompts you. You decide. Every session is opt-in — no silent connections, no background listeners.</p>
+            </div>
+          </div>
+          <div class="how-step" data-step="3" id="step-3">
+            <div class="step-num">04</div>
+            <div class="step-content">
+              <div class="step-title">Encrypted session, then silence</div>
+              <p class="step-desc">X25519 ECDH key exchange derives a session key. ChaCha20-Poly1305 encrypts the stream. When you disconnect, the key is gone forever.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Terminal visual changes with step -->
+        <div class="how-visual reveal">
+          <div class="big-terminal" aria-label="Step demonstration terminal">
+            <div class="terminal-bar">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="terminal-title" id="step-terminal-title">veil --init</span>
+            </div>
+            <div class="terminal-body" id="step-terminal-body">
+              <!-- Content injected by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ENCRYPTION LAYERS
+       ============================================= -->
+  <section id="encryption">
+    <div class="container">
+      <div class="encryption-grid">
+        <div class="reveal">
+          <p class="section-label">// encryption_model</p>
+          <h2 class="section-title" style="text-align:left;">Layered security,<br/>no complexity for you</h2>
+          <p class="section-desc" style="text-align:left;margin:16px 0 0;">Veil stacks multiple layers of cryptographic protection. Tor provides transport-level anonymity; your session key provides end-to-end confidentiality.</p>
+
+          <div style="margin-top:32px;display:flex;flex-direction:column;gap:12px;">
+            <div style="display:flex;align-items:center;gap:10px;font-family:var(--font-mono);font-size:0.82rem;color:var(--color-text-dim);">
+              <span style="color:var(--color-green);">✓</span> No Double Ratchet needed — sessions are synchronous
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-family:var(--font-mono);font-size:0.82rem;color:var(--color-text-dim);">
+              <span style="color:var(--color-green);">✓</span> Session key exists only in RAM, never on disk
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-family:var(--font-mono);font-size:0.82rem;color:var(--color-text-dim);">
+              <span style="color:var(--color-green);">✓</span> Onion address authenticates peer — no MITM possible
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-family:var(--font-mono);font-size:0.82rem;color:var(--color-text-dim);">
+              <span style="color:var(--color-green);">✓</span> Neither party sees the other's real IP address
+            </div>
+          </div>
+        </div>
+
+        <div class="encryption-visual reveal reveal-delay-2">
+          <div class="enc-layer">
+            <div class="enc-icon" style="background:rgba(86,240,154,0.1);">🌐</div>
+            <div>
+              <div class="enc-label">Tor Network — Transport Layer</div>
+              <div class="enc-desc">3-hop onion routing. Neither peer sees the other's IP.</div>
+            </div>
+          </div>
+
+          <div class="enc-arrow">↓</div>
+
+          <div class="enc-layer">
+            <div class="enc-icon" style="background:rgba(97,36,223,0.15);">🔑</div>
+            <div>
+              <div class="enc-label">X25519 ECDH — Key Exchange</div>
+              <div class="enc-desc">Derives a symmetric session key on connection. Forward-secret by design.</div>
+            </div>
+          </div>
+
+          <div class="enc-arrow">↓</div>
+
+          <div class="enc-layer">
+            <div class="enc-icon" style="background:rgba(169,124,255,0.12);">🔐</div>
+            <div>
+              <div class="enc-label">ChaCha20-Poly1305 — AEAD Cipher</div>
+              <div class="enc-desc">Encrypts every message with authentication. Modern, fast, audited.</div>
+            </div>
+          </div>
+
+          <div class="enc-arrow">↓</div>
+
+          <div class="enc-layer">
+            <div class="enc-icon" style="background:rgba(255,85,102,0.1);">💨</div>
+            <div>
+              <div class="enc-label">Session End — Cryptographic Amnesia</div>
+              <div class="enc-desc">Session key wiped from memory. No record kept, anywhere.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       TECH STACK
+       ============================================= -->
+  <section id="stack">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// tech_stack</p>
+        <h2 class="section-title">Engineered for the task</h2>
+        <p class="section-desc">Every dependency was chosen deliberately. Nothing bloated, nothing unnecessary.</p>
+      </div>
+
+      <div class="stack-table-wrap reveal">
+        <table>
+          <thead>
+            <tr>
+              <th>Layer</th>
+              <th>Technology</th>
+              <th>Rationale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="stack-layer">Language</span></td>
+              <td><span class="stack-tech">Go</span></td>
+              <td class="stack-rationale">Native Tor support via <code style="font-family:var(--font-mono);color:var(--color-accent);font-size:0.82em;">bine</code>, strong concurrency primitives, single binary output</td>
+            </tr>
+            <tr>
+              <td><span class="stack-layer">Tor Integration</span></td>
+              <td><span class="stack-tech">bine</span></td>
+              <td class="stack-rationale">Embeds Tor directly — no external Tor installation required from the user</td>
+            </tr>
+            <tr>
+              <td><span class="stack-layer">Onion Services</span></td>
+              <td><span class="stack-tech">Tor v3 (Ed25519)</span></td>
+              <td class="stack-rationale">Self-authenticating, NAT-transparent addresses. Permanent identity, zero registration</td>
+            </tr>
+            <tr>
+              <td><span class="stack-layer">Key Exchange</span></td>
+              <td><span class="stack-tech">X25519 ECDH</span></td>
+              <td class="stack-rationale">Fast, secure, industry-standard. Provides forward secrecy per session</td>
+            </tr>
+            <tr>
+              <td><span class="stack-layer">Symmetric Cipher</span></td>
+              <td><span class="stack-tech">ChaCha20-Poly1305</span></td>
+              <td class="stack-rationale">Modern AEAD cipher, constant-time, mobile-friendly, hardware-independent</td>
+            </tr>
+            <tr>
+              <td><span class="stack-layer">Terminal UI</span></td>
+              <td><span class="stack-tech">bubbletea + lipgloss</span></td>
+              <td class="stack-rationale">Termux-style TUI framework. The terminal IS the product</td>
+            </tr>
+            <tr>
+              <td><span class="stack-layer">Key Storage</span></td>
+              <td><span class="stack-tech">Local file (0600)</span></td>
+              <td class="stack-rationale">Private key never leaves the device. No cloud sync, no backup service</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ROADMAP
+       ============================================= -->
+  <section id="roadmap">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// roadmap</p>
+        <h2 class="section-title">Where we are, where we're going</h2>
+        <p class="section-desc">Two phases complete. Two phases ahead — features and hardening.</p>
+      </div>
+
+      <div class="roadmap-phases">
+        <!-- Phase 1 -->
+        <div class="phase-card reveal" style="--phase-color: #56f09a;">
+          <div class="phase-header">
+            <span class="phase-num">Phase 01</span>
+            <span class="phase-badge done">Complete</span>
+          </div>
+          <div class="phase-title">Core</div>
+          <ul class="phase-items">
+            <li class="done">Keypair generation on first launch</li>
+            <li class="done">Embedded Tor daemon via <code>bine</code></li>
+            <li class="done">Onion service creation &amp; display</li>
+            <li class="done">Outbound connection to peer address</li>
+            <li class="done">Inbound listener with accept/reject</li>
+            <li class="done">X25519 session key exchange</li>
+            <li class="done">ChaCha20-Poly1305 encrypted stream</li>
+            <li class="done">Basic TUI (send/receive messages)</li>
+          </ul>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="phase-card reveal reveal-delay-1" style="--phase-color: #56f09a;">
+          <div class="phase-header">
+            <span class="phase-num">Phase 02</span>
+            <span class="phase-badge done">Complete</span>
+          </div>
+          <div class="phase-title">Master UI</div>
+          <ul class="phase-items">
+            <li class="done">Interactive TUI Main Menu (Host vs Join)</li>
+            <li class="done">Graceful CLI flag bypass (hybrid mode)</li>
+            <li class="done">Loading screens (Tor startup, onion creation)</li>
+            <li class="done">Address input form</li>
+          </ul>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="phase-card reveal reveal-delay-2" style="--phase-color: #a97cff;">
+          <div class="phase-header">
+            <span class="phase-num">Phase 03</span>
+            <span class="phase-badge active">In Progress</span>
+          </div>
+          <div class="phase-title">Features</div>
+          <ul class="phase-items">
+            <li class="pending"><code>/send</code> file transfer over active session</li>
+            <li class="pending">Contact alias system (local nicknames)</li>
+            <li class="pending"><code>--auto-accept</code> whitelist for trusted addresses</li>
+            <li class="pending">Session transcript opt-in (encrypted, local only)</li>
+            <li class="pending">Multi-platform builds (Linux, macOS, Windows, Termux)</li>
+          </ul>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="phase-card reveal reveal-delay-3" style="--phase-color: #4a4860;">
+          <div class="phase-header">
+            <span class="phase-num">Phase 04</span>
+            <span class="phase-badge planned">Planned</span>
+          </div>
+          <div class="phase-title">Hardening</div>
+          <ul class="phase-items">
+            <li class="pending">Traffic padding (resist timing analysis)</li>
+            <li class="pending">Canary mode (detect binary tampering)</li>
+            <li class="pending">External security audit</li>
+            <li class="pending">Source-available public release</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       DOWNLOAD / CTA
+       ============================================= -->
+  <section id="download">
+    <div class="cta-glow"></div>
+    <div class="container">
+      <div class="cta-content">
+        <div class="hero-badge" style="margin:0 auto 24px;width:fit-content;" aria-label="Early access status">
+          <span class="badge-dot"></span>
+          Early Access — Phase 2 Build
+        </div>
+
+        <h2 class="cta-title reveal">
+          <span style="background:linear-gradient(135deg,#fff 0%,var(--color-accent) 60%,var(--color-purple) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">
+            Own your privacy.
+          </span>
+        </h2>
+
+        <p class="cta-desc reveal">
+          Download the current build or follow the project on GitHub to track development, report issues, or contribute.
+        </p>
+
+        <div class="download-options reveal">
+          <a href="https://github.com/GNU-LuxTech/Veil-App/releases" target="_blank" rel="noopener" class="dl-btn" id="dl-releases">
+            <span class="dl-icon">🪟</span>
+            <div class="dl-info">
+              <div>Windows (x64)</div>
+              <div class="dl-label">veil.exe — Latest release</div>
+            </div>
+          </a>
+
+          <a href="https://github.com/GNU-LuxTech/Veil-App/releases" target="_blank" rel="noopener" class="dl-btn" id="dl-linux">
+            <span class="dl-icon">🐧</span>
+            <div class="dl-info">
+              <div>Linux / macOS</div>
+              <div class="dl-label">Coming in Phase 3</div>
+            </div>
+          </a>
+
+          <a href="https://github.com/GNU-LuxTech/Veil-App/releases" target="_blank" rel="noopener" class="dl-btn" id="dl-termux">
+            <span class="dl-icon">📱</span>
+            <div class="dl-info">
+              <div>Android (Termux)</div>
+              <div class="dl-label">Coming in Phase 3</div>
+            </div>
+          </a>
+        </div>
+
+        <p class="cta-note reveal">
+          Source code available on
+          <a href="https://github.com/GNU-LuxTech/Veil-App" target="_blank" rel="noopener" id="cta-source-link">GitHub</a>
+          · Licensed under GPL-3.0
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="veil_logo.png" alt="Veil" />
+          VEIL
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="https://github.com/GNU-LuxTech/Veil-App" target="_blank" rel="noopener" id="footer-github-link">GitHub</a></li>
+          <li><a href="https://github.com/GNU-LuxTech/Veil-App/blob/main/LICENSE.md" target="_blank" rel="noopener" id="footer-license-link">License</a></li>
+          <li><a href="https://github.com/GNU-LuxTech/Veil-App/issues" target="_blank" rel="noopener" id="footer-issues-link">Issues</a></li>
+        </ul>
+
+        <p class="footer-copy">
+          © 2026 GNU-LuxTech · <em>"Privacy is not about having something to hide."</em>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
